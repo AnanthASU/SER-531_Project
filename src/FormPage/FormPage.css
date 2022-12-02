@@ -1,0 +1,35 @@
+.Form-Container
+{
+    display: flex !important;
+    flex-direction: column !important;
+    align-content: center;
+    padding: 250px;
+    padding-bottom: 150px !important;
+}
+.Form-Elements{
+    padding: 50px;
+    padding-bottom: 30px !important;
+}
+
+.Title
+{
+    font-size: 50px;
+    font-weight: 900;
+    padding: 20px;
+    font-family: cursive;
+}
+
+.From-Label
+{
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: cursive;
+}
+
+.Button-Elements
+{
+    font-size: 25px !important;
+    font-weight: 900 !important;
+    font-family: cursive !important;
+}

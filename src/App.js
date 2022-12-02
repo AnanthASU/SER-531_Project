@@ -1,24 +1,20 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+import FormPage from './FormPage/FormPage';
+import QuestionsPage from "./QuestionsPage/QuestionsPage";
+import {BrowserRouter as Router, Route,Switch, Link} from "react-router-dom";
 
 function App() {
+  const [response, setResponse] = React.useState();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div style={{ backgroundImage: `url("https://img.freepik.com/free-photo/arrangement-movie-elements-blue-background-with-copy-space_23-2148457886.jpg?w=2000")` }}>
+    <Router>
+        <Switch>
+          <Route exact path="/" render={() => <FormPage handleApiResponse={(response)=>{setResponse(response)}}/>} ></Route>
+          <Route exact path="/QuestionsPage" render={() => <QuestionsPage apiResponse={response} />}></Route>
+        </Switch>
+      </Router>
+      </div>
   );
 }
 
