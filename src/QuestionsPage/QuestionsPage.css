@@ -1,0 +1,92 @@
+.Card-Wrapper{
+    font-family: 'Nunito', sans-serif !important;
+    padding: 250px !important;
+    padding-top: 150px !important;
+    overflow-y: auto;
+    height: 700px;
+    text-decoration: none; 
+  }
+  .card{
+      border-radius: 4px !important;
+      background: aliceblue !important;
+      box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05) !important;
+        transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12) !important;
+    padding: 14px 200px 18px 36px !important;
+    cursor: pointer !important;
+    background-image: url(https://ionicframework.com/img/getting-started/theming-card.png) !important;
+        background-repeat: no-repeat !important;
+      background-position: right !important;
+      color: black !important;
+      margin-bottom: 20px;
+      background-size: 120px !important;
+  }
+  .card:hover{
+       transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  }
+ .save-icon
+ {
+   margin-right:20px;
+   margin-left: 6px;
+ }
+ .description
+ {
+   font-size: 24px !important;
+   font-family: 'Lato', sans-serif;
+   padding-top: 10px;
+   font-weight: 500;
+ }
+ .like-icon
+ {
+   color: indianred;
+ }
+ .save-box
+ {
+   display: flex;
+   flex-direction: row;
+   font-size: 18px;
+ }
+ .title
+ {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: xx-large;
+ }
+  .card h3{
+    font-weight: 600;
+  }
+  .save
+  {
+    font-size: 22px;
+    vertical-align: text-bottom;
+
+  }
+  .card img{
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    max-height: 120px;
+  }
+  
+  
+  
+  @media(max-width: 990px){
+    .card{
+      margin: 20px;
+    }
+  } 
+
+  .link
+  {
+    text-decoration: none;
+  }
+
+  .Answer
+  {
+    display: none;
+    font-size: 24px;
+  }
+
+  .answer-wrapper
+  {
+    height:10px;
+  }
